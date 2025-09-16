@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"], // 明确浏览器环境类型
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "declaration": true,       // 生成 .d.ts（适用于库开发）
+    "sourceMap": true,         // 浏览器调试必备
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@test/*": ["test/*"]
+    },
+    "types": ["vitest/globals"] // 测试专用，浏览器中无害
+  },
+  "include": [
+    "src", 
+    "test", 
+    "*.config.ts", 
+    "src/global.d.ts", 
+    "vitest.config.mts"
+  ],
+  "exclude": ["node_modules", "dist", "coverage"]
+}

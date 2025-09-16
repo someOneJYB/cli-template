@@ -1,0 +1,2 @@
+npm run precommit
+git diff --name-only HEAD | grep -E 'src/.*\.ts' && npm run docs:api

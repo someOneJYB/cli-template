@@ -1,0 +1,29 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+    "tsconfig": "tsconfig.build.json",
+  "entryPointStrategy": "resolve",
+  "out": "docs/api",
+  "name": "My Awesome TS Library",
+  "readme": "README.md",
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "githubPages": false,
+  "hideGenerator": true,
+  "cleanOutputDir": true,
+  "visibilityFilters": {
+    "protected": false,
+    "private": false,
+    "inherited": true
+  },
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true,
+    "includeFolders": true
+  },
+  "sort": ["kind", "source-order"],
+  "categorizeByGroup": true,
+  "searchInComments": true,
+}
